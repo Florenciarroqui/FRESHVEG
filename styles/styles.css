@@ -156,7 +156,7 @@ h2{
 
 .grid-container2{ 
     display: grid;
-    grid-template-columns: 600px 300px 100px;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "join-subtitle join-subtitle join-img"
                          "join-subtitle join-subtitle join-img"
@@ -215,8 +215,9 @@ h2{
 }
 
 .grid-container2 img{
-    width: 500px;
+    width: 100%;
     height: auto;
+    align-self: center;
     margin-left: 0px;
 }
 
@@ -325,7 +326,7 @@ footer a:visited{
 @media (Max-width:576px){
     .grid-principal {
         grid-template-columns: 1fr;
-        grid-template-rows: 100px 200px 250px;
+        grid-template-rows: 100px 270px 230px;
         grid-template-areas:
             "title"
             "description"
@@ -335,53 +336,68 @@ footer a:visited{
     .title, .description, .img-principal {
         text-align: center;
     }
+    .title , .description{margin-top: 10px;}
 
     .img-principal {
-        width: 100%;
+        padding: 0;
+        margin:10px;
+        width: 90%;
         max-width: 300px;
     }
+    .card h3{font-size: 30px;}
+    .card p{font-size: 25px;}
     .grid-container2 {
         grid-template-columns: 1fr;
-        grid-template-rows: 200px 100px 500px;
+        grid-template-rows: auto auto auto;
         grid-template-areas:
             "join-subtitle"
             "learn"
             "join-img";
         text-align: center;}
 
-    .join-title{text-align: center;
-                 font-size: 50px;}
+    .join-title{
+        align-self: center;
+        text-align: center;
+                 font-size: 50px;
+                margin-top: 10px;}
+    
 
     .join-subtitle{font-size: 30px;
-                  margin-top: 20px;}
+                  margin: 20px 5px;
+                  margin-left: 5px;
+                align-self: center;
+            justify-self: center;}
+    .learn{align-self: center;}
 
     .join-img{
         justify-self: center;
-        align-self: center;}
+        align-self: center;
+    width: auto;}
 
+    .lunchanddinner{font-size: 30px;}
+    
+    footer{justify-content: space-between;
+    margin: 10px;}
+    .logo-footer{width:80%}
     .copyright{
-        font-size: 15px;
+        font-size: 10px;
         text-align: center;
     }
+
     }
 
 /* Menu */
-
-.chef-img{
-    width: 470px;
-    height: 600px;}
     
 .menu-title{
         text-align: center;
-        margin-top: 10px;
+        margin: 10px 0;
     }
-
 
 .categories-menu{
     color: #E38541;
     font-family: "Amarante", serif;
     text-align: center;
-    margin: 30px;
+    margin: 10px;
 }
 .grid-menu{
     display: flex;
@@ -439,11 +455,19 @@ footer a:visited{
 .card-menu a:visited{
         text-decoration: underline;
     }
-@media(max-width:768px){
+
+    @media(max-width:768px){
     .card-menu img{width: 80%}
     .card-menu{width: 200px;}
     .copyright{font-size: 15px;
     text-align: center;}
+    @media(max: width 576px){
+        .grid-menu{
+            justify-content: space-between;
+            margin:0;
+            gap:10px ;
+    }
+
 }
 
 /* About us */
