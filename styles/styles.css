@@ -456,12 +456,13 @@ footer a:visited{
         text-decoration: underline;
     }
 
-    @media(max-width:768px){
+@media(max-width:768px){
     .card-menu img{width: 80%}
     .card-menu{width: 200px;}
     .copyright{font-size: 15px;
-    text-align: center;}
-    @media(max: width 576px){
+    text-align: center;}}
+
+    @media(max-width:576px){
         .grid-menu{
             justify-content: space-between;
             margin:0;
@@ -751,6 +752,4 @@ form input[type="button"]:hover {
 .order-second img{
     width: 200px;
     display: inline-block;
-    margin-bottom: 100px;
-    
-}
+    margin-bottom: 100px;}
