@@ -1,0 +1,91 @@
+//Card Home
+.grid-container{
+    @include flex (column, center, center);}
+.card{
+    margin-top: 10px;
+    padding: 16px;
+    border: 5px solid map-get($colors, our-green );
+    border-radius: 10px;
+    width:auto;
+    background-color: map-get($colors, cream );
+    @include flex (column, center, center);
+    h3{
+        font-family: "Actor";
+        font-size: 40px;
+        color: map-get($colors , our-green );}
+    p{  
+        font-family: "Actor";
+        font-size: 30px;
+        color: map-get($colors, our-green );}
+    img{
+        width: 90%;
+        border-radius: 10px;
+    }
+    a{ 
+        font-size: 20px;
+        margin-top: 6px;
+        text-decoration: none;
+        color: map-get($colors, our-green );
+        padding: 10px;
+        border: 2px solid map-get($colors, our-green );
+        border-radius: 10px;
+        display: inline-block;
+        &:hover{
+            text-decoration: underline;
+        }
+        &:visited{
+            text-decoration: underline;
+        }
+    }
+}
+
+/* Cards Menu */
+
+.card-menu{
+    border: 3px solid map-get($colors, all-white );
+    border-radius: 5px;
+    padding: 16px;
+    width: 350px;
+    @include flex (column,center,center);
+    h3{font-family: "Amarante";
+        font-size: 20px;
+        text-align: center;
+        text-decoration: underline;
+        color: green;
+
+    }
+    p{
+        font-family: "Actor";
+        font-size: 15px;
+        text-align: center;
+    }
+    img{
+        width: 320px;
+        object-fit: cover;
+    }
+    a{
+        text-decoration: none;
+        display: inline-block;
+        border: 2px solid map-get($colors, grey- );
+        border-radius: 5px;
+        color: map-get($colors, grey- );
+        padding: 8px 12px;
+        margin-top: 10px;
+        &:hover{
+            text-decoration: underline;
+        }
+        &:visited{
+            text-decoration: underline;
+        }
+    }
+}
+
+    
+
+
+    
+
+
+
+
+

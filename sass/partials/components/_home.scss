@@ -1,0 +1,224 @@
+body{
+    background-color: map-get($colors , cream );
+}
+
+
+
+.grid-principal{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "img-principal img-principal title"
+                         "img-principal img-principal description" ;
+    background-color: map-get($colors, our-green );
+    width: 100%;
+    max-width: 100%;
+    h1{
+        color:map-get($colors, all-white );
+        font-size: 50px;
+        font-family: "Amarante", serif;
+        text-align: start;
+        margin-top: 100px;
+        margin-left: 30px;
+        grid-area: title;
+}
+   p{
+    margin: 0;
+    font-family: "Actor", serif;
+    color: map-get($colors, all-white );
+    margin: 0 20px;
+    font-size: 20px;
+    grid-area: description;
+
+   }
+   img{
+    width: 120%;
+    margin-left: -200px;
+    grid-area: img-principal;
+
+   }
+   }
+
+
+
+.lunchanddinner{
+    margin-top: 50px;
+    text-align: center;
+    font-family: "Amarante";
+    font-size: 40px;
+    color: map-get($colors, our-orange)
+}
+.join-title{
+    margin-top: 50px;
+    text-align: center;
+    font-family: "Amarante";
+    font-size: 50px;
+    color: map-get($colors, our-orange)
+}
+
+.grid-container2{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "join-subtitle join-subtitle "
+                         "join-subtitle join-subtitle "
+                         "learn learn";
+    background-color: map-get($colors, our-orange);
+    h3{  
+        grid-area: join-subtitle;
+        font-family: "Actor";
+        font-size: 50px;
+        text-align: center;
+        background-color: map-get($colors, our-orange );
+        color: map-get($colors, all-white );
+        margin: 80px;
+
+    }
+    a{
+         grid-area: learn;
+         font-size: 20px;
+         justify-self: center;
+         text-decoration: none;
+         color: map-get($colors, all-white );
+         padding: 10px;
+         border: 2px solid map-get($colors, all-white );
+         border-radius: 10px;
+         display: inline-block;
+         width: fit-content;
+         margin-bottom: 20px;
+        &:hover{
+            text-decoration: underline;
+        }
+        &:visited{
+            text-decoration: underline;
+        }
+    }
+ 
+    //RESPONSIVE
+
+    @media (max-width: 1024px){
+        .grid-principal {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 200px 400px;
+            grid-template-areas:
+                "title title"
+                "img-principal description";
+            text-align: center;
+            img{
+                width: 90%;
+                margin: 50px auto;
+            }  
+            h1{
+                font-size: 60px;
+            }     
+            p{
+                font-size: 20px;
+                margin-top: 50px; 
+            }
+        }
+    
+        .grid-container2 {
+            grid-template-columns: 1fr;
+            grid-template-rows: 200px 100px 500px;
+            grid-template-areas:
+                "join-subtitle"
+                "learn"
+                "join-img";
+            text-align: center;
+            h3{
+                font-size: 40px;
+                margin-top: 10px;}
+            
+        }
+        .join-title{text-align: center;
+                     font-size: 60px;}
+       
+        }
+    }
+    
+    
+    @media (max-width:768px){
+        .grid-principal {
+            grid-template-columns: 1fr;
+            grid-template-rows: 100px 150px 450px;
+            grid-template-areas:
+                "title"
+                "description"
+                "img-principal";
+            text-align: center;
+        h1{
+            text-align: center;
+            font-size: 30px;
+        }
+        p{
+            text-align: center;
+            font-size: 15px;
+        }
+        img{
+            width: 80%;
+            justify-self: center;
+        }
+    
+    }
+    }
+    
+    @media (Max-width:576px){
+        .grid-principal {
+            grid-template-columns: 1fr;
+            grid-template-rows: 100px 270px 230px;
+            grid-template-areas:
+                "title"
+                "description"
+                "img-principal";
+            h1, p{
+                text-align: center;
+                margin-top: 10px;
+            }
+            img{
+                padding: 0;
+                margin:10px;
+                width: 90%;
+                max-width: 300px; }
+            }
+        }
+    
+        .card h3{font-size: 30px;}
+        .card p{font-size: 25px;}
+        .grid-container2 {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto;
+            grid-template-areas:
+                "join-subtitle"
+                "learn"
+                "join-img";
+            text-align: center;
+            h3{
+                font-size: 30px;
+                margin: 20px 5px;
+                margin-left: 5px;
+                align-self: center;
+                justify-self: center;
+            }
+            a{
+                align-self: center;
+
+            }
+        }
+    
+        .join-title{
+            align-self: center;
+            text-align: center;
+                     font-size: 50px;
+                    margin-top: 10px;}
+        
+    
+      
+        .lunchanddinner{font-size: 30px;}
+        
+    
+      
+
+
+
+

@@ -1,0 +1,36 @@
+//Form - Contact Us
+
+form {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: map-get($colors, cream );
+    border: 1px solid map-get($colors, grey- );
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Actor";
+    label{
+        display: block;
+        margin-bottom: 8px;
+        font-size: 1rem;
+        color: #333;}
+    input[type="date"], input[type="text"], input[type="range"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+    input[type="button"]{
+        width: 100%;
+        padding: 10px;
+        background-color: map-get($colors, our-orange );
+        color: map-get($colors, all-white );
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        &:hover{background-color: green;}
+    }
+    }

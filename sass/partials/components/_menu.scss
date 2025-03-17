@@ -1,0 +1,22 @@
+.menu-title{
+    font-size: $title-font;
+    font-family: "Amarante";
+    text-align: center;
+    margin: 10px 0;
+    color: map-get($colors, all-white );
+}
+
+.categories-menu{
+    color: map-get($colors, our-orange );
+    font-family: "Amarante", serif;
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+}
+.grid-menu{
+    @include flex (row, space-evenly, center);
+    flex-wrap: wrap;
+    margin: 12px 0;
+    gap:10px ;
+    align-items: stretch;
+}

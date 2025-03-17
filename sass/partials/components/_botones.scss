@@ -1,0 +1,19 @@
+//Boton Home
+
+.btn-order{
+    border:3px solid map-get($colors, our-orange );
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: map-get($colors, cream );
+    color: map-get($colors, our-orange );
+    display: inline-block;
+    align-self: center;
+    justify-self: center;
+    font-size: 23px;
+    margin: 0 20px;
+    padding: 5px 10px;
+    &:hover {text-decoration: underline;}
+    &:visited {text-decoration: underline;}
+
+}
+

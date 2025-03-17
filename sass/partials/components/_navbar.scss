@@ -1,0 +1,14 @@
+.nav{
+    background-color: map-get($colors, cream );
+}
+
+.logo{
+    width: 180px;
+    height: 130px;
+}
+.navbar-nav{
+    font-family: "Jockey One", serif;
+    gap:20px;
+}
+.nav-link{
+    color: map-get($colors, green );}

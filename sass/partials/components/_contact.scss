@@ -1,0 +1,95 @@
+.contact-title{
+    color: map-get($colors, grey- );
+    text-align: center;
+    margin-top: 20px;
+    font-size: $title-font;
+    font-family: "Amarante";
+}
+
+
+.sentence{
+    color: map-get($colors, grey- );
+    text-align: center;
+    font-family: "Actor";
+    font-size: 30px;
+}
+
+
+.info{
+    font-family: "Actor";
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "place contact"
+    "primer-parrafo tercer-parrafo"
+    "segundo-parrafo cuarto-parrafo";
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    h2{
+        color: map-get($colors, our-green );
+        
+    }
+    p{
+        color: map-get($colors, grey- );
+        font-size: 20px;
+        text-align: center;
+    }
+
+}
+
+
+.pp{
+    grid-area: primer-parrafo;
+    margin-top: 20px;
+}
+.sp{
+    grid-area: segundo-parrafo;
+}
+.place{
+    grid-area: place;
+}
+.contact{
+    grid-area: contact;
+}
+.tp{
+    grid-area: tercer-parrafo;
+    margin-top: 20px;
+}
+.cp{
+    grid-area: cuarto-parrafo;
+}
+
+
+//Responsive
+
+@media (max-width: 576px){
+
+    .sentence{
+        font-size: 20px;
+    }
+    .info{
+        font-size: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "place"
+        "primer-parrafo"
+        "segundo-parrafo"
+        "contact"
+        "tercer-parrafo"
+        "cuarto-parrafo";
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    h2{
+        color: map-get($colors, our-green );
+        
+    }
+    p{
+        color: map-get($colors, grey- );
+        font-size: 20px;
+        text-align: center;
+    }
+    }
+}

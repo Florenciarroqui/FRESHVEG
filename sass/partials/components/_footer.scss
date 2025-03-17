@@ -1,0 +1,41 @@
+
+
+footer{
+    @include flex (row, space-around, center);
+    gap: 24px;
+    p{
+        color: map-get($colors, grey- );
+        font-size: 15px;
+    }
+    a{
+        color: map-get($colors, grey- );
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+        &:visited{
+            text-decoration: underline;
+        }
+    }
+    figure{
+        img{
+            width: 150px;
+            height: 100px;
+        }
+    }
+
+}
+
+//Responsive
+
+@media (Max-width:576px){
+    footer{justify-content: space-between;
+        margin: 10px;
+        p{
+            font-size: 10px;
+            text-align: center;
+ }}
+        .logo-footer{width:80%}}
+
+
+

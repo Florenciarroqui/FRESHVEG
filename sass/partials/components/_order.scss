@@ -1,0 +1,72 @@
+.order-main {
+    background-color: map-get($colors, our-orange);
+    display: grid;
+    grid-template-columns: 300px 300px 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "order-title order-title order-img"
+        "pickup delivery order-img";
+    gap: 20px; 
+    h1 {
+        font-size: $title-font;
+        font-family: "Amarante";
+        color: map-get($colors, all-white);
+        margin-top: 50px;
+        text-align: center;
+    }
+    img {
+        width: 100%;}
+    a {
+        text-decoration: none;
+        border: 2px solid map-get($colors, all-white);
+        border-radius: 20px;
+        padding: 10px 40px;
+        color: map-get($colors, all-white);
+        font-family: "Actor";
+        font-size: 20px;
+        font-weight: 900;
+        text-align: center;
+        align-self: center;
+       
+        height: fit-content;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+        &:visited {
+            text-decoration: underline;
+        }
+    }
+}
+.order-title{grid-area: order-title;}
+.order-img{grid-area: order-img;}
+
+.pickup {
+    grid-area: pickup;
+}
+
+.delivery {
+    grid-area: delivery;
+}
+
+.order-second {
+    text-align: center;
+
+    h2 {
+        font-family: "Amarante";
+        font-size: 70px;
+        margin: 100px 60px;
+        color: map-get($colors, grey-)
+    }
+
+    img {
+        width: 200px;
+        display: inline-block;
+        margin-bottom: 100px;
+    }
+}
+
+//Responsive
+
+
+   
