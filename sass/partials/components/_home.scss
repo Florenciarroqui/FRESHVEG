@@ -1,6 +1,8 @@
 body{
     background-color: map-get($colors , cream );
-}
+    overflow-x: hidden;
+      }
+
 
 
 
@@ -14,6 +16,8 @@ body{
     background-color: map-get($colors, our-green );
     width: 100%;
     max-width: 100%;
+    overflow-x: hidden;
+    transform: translateX(0);
     h1{
         color:map-get($colors, all-white );
         font-size: 50px;
